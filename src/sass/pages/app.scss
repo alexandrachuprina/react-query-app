@@ -1,0 +1,35 @@
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 30vh 0 30vh;
+  height: 100vh;
+  width: 100vw;
+
+  align-content: center;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+
+  background-color: grey;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+
+  h1 {
+    font-family: 'Satoshi-Bold';
+    font-size: 2rem;
+    span {
+      font-family: 'Satoshi-Italic';
+    }
+  }
+}
