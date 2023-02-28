@@ -42,7 +42,8 @@ export default function NewsAPI() {
 
       {!data && !isLoading ?
         <div className="welcome">
-          {/* <h1>Choose the subject and let's go</h1> */}
+          <h1>The most recent news just in one click</h1>
+          <p>What are you interested in?</p>
         </div>
         : null}
 

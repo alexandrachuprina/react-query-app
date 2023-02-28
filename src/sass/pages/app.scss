@@ -1,53 +1,91 @@
+@use '../abstracts/breakpoints' as b;
+
+$header-h1: 11.5vw;
 
 body {
   margin: 0;
+
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
   padding: 5vh 20vh 0 20vh;
   height: 100vh;
   width: 100vw;
-
-  align-content: center;
-  justify-content: flex-start;
-
   box-sizing: border-box;
-
-  // background-color: grey;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-
-  h1 {
-    font-family: 'NeutralFace-Bold';
-    font-size: 2rem;
-    span {
-      font-style: italic;
-      margin-right: 0.5vw;
-    }
-  }
-}
-
-.welcome {
-  position: absolute;
-  top: -10vh;
-  left: 0;
-  display: flex;
-  flex-direction: column;
 
   h1 {
     margin: 0;
     padding: 0;
-    font-size: 28vh;
-    font-family: 'NeutralFace-Bold';
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+
+    h1 {
+      font-family: 'NeutralFace-Bold';
+      font-size: 2rem;
+
+      span {
+        font-style: italic;
+        margin-right: 0.5vw;
+      }
+    }
+  }
+
+  .welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: $header-h1;
+      font-family: 'NeutralFace-Bold';
+    }
+
+    p {
+      font-family: 'NeutralFace';
+      align-self: center;
+      font-size: 2vh;
+      padding-top: 3vh;
+    }
+  }
+
+  @media (min-width: b.$breakpoint-s) and (max-width: b.$breakpoint-m) {
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+
+    .welcome {
+      
+    }
+  }
+
+  @media (min-width: b.$breakpoint-m) and (max-width: b.$breakpoint-l) {
+    background-color: orange;
+    height: 100vh;
+    width: 100vw;
+
+    .welcome {
+      
+    }
+  }
+
+  @media (min-width: b.$breakpoint-l) and (max-width: b.$breakpoint-xl) {
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+
+    .welcome {
+      
+    }
   }
 }
