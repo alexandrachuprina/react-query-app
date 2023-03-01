@@ -1,7 +1,7 @@
 # News getter 
 
 ## Resources
-API:https://newsapi.org/docs/get-started
+API: https://newsapi.org/docs/get-started
 
 ## Created with:
 1. React Query
